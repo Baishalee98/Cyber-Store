@@ -15,7 +15,7 @@ and open the template in the editor.
     text-align: center;
     
     color: #f8f8f8; 
-    background: url(img/intro-bg_1.jpg) no-repeat center center;
+    background: url(img/banner_image_2.jfif) repeat center center;
     background-size: cover;
     
 }
@@ -86,4 +86,99 @@ body{
 
 #cart_table{
     
+}
+
+.button{
+    font: bold 11px Arial;
+    text-decoration: none;
+    background-color: #EEEEEE;
+    color: #333333;
+    padding: 4px 8px;
+    border-top: 1px solid #CCCCCC;
+    border-right: 1px solid #333333;
+    border-bottom: 1px solid #333333;
+    border-left: 1px solid #CCCCCC;
+}
+.button:hover{
+    text-decoration: none;
+}
+
+.add_product{
+    padding-bottom: 40px;
+    padding-top: 40px;
+}
+
+/*sign-up page*/
+
+form>ul{
+    list-style-type: none;
+}
+
+form>ul>li{
+    font-size: 25px;
+}
+
+form>ul>li>a:hover{
+    text-decoration: none;
+    color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@keyframes bounce {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.sidebar {
+    background-color: white;
+    height: 100vh;
+    width: 100%;
+    /*border: 2px solid black;*/
+    transition: all 0.3s linear;
+}
+@media(min-width:700px) {
+    .sidebar {
+        width: 60rem;
+    }
+}
+.sidebar_show {
+    transform: translate(0);
+}
+.sidebar_hide {
+    transform: translate(-100%);
+}
+.filter_bar_overlap{
+    position: absolute;
+}
+
+.links {
+    height: 75vh;
+    padding: 20px 0;
+}
+.links li {
+    /*margin: 10px 0;*/
+    text-align: left;
+    padding: 10px 10px;
+    list-style: none;
+    font-size: 16px;
 }

@@ -6,6 +6,7 @@
         <script type="text/javascript" src="bootstrap/js/jquery-3.4.1.min.js"></script>
         <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
         <link rel="stylesheet" href="style.css" type="text/css">
+        <script type="text/javascript" src="jquery-3.5.1.min.js"></script>
     </head>
     <body>
         <header>
@@ -21,6 +22,7 @@
                 </div>
                 <div class="collapse navbar-collapse" id="myNavbar">
                     <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#" class="filter_icon"><span class="glyphicon glyphicon-filter"></span>Filter</a></li>
                         <li><a href="cart.html"><span class="glyphicon glyphicon-shopping-cart"></span>Cart</a></li>
                         <li><a href="settings.html"><span class="glyphicon glyphicon-user"></span>Settings</a></li>
                         <li><a href="index.html"><span class="glyphicon glyphicon-log-out"></span>Logout</a></li>
@@ -30,90 +32,101 @@
         </nav>
         </header>
         
+        <div class="filter_bar_overlap">
+            <aside class="sidebar sidebar_hide">
+                
+                <ul class="links">
+                    <li>
+                        <label for="product">Product</label>
+                        <select>
+                            <option>All</option>
+                            <option>Potatoes</option>
+                            <option>Tomatoes</option>
+                            <option>Rice</option>
+                            <option>Flour</option>
+                            <option>Apple</option>
+                            <option>Mango</option>
+                            <option>Cabbage</option>
+                            <option>Banana</option>
+                        </select>
+                    </li>
+                    <li>
+                        <label for="price">Price</label>
+                        <select>
+                            <option>All</option>
+                            <option>Under Rs.100</option>
+                            <option>Rs.100-500</option>
+                            <option>Rs.500-1000</option>
+                            <option>Rs.1000-2000</option>
+                            <option>Over Rs.2000</option>
+                        </select>
+                    </li>
+                    <li>
+                        <label for="Shop">Shop</label>
+                        <select>
+                            <option></option>
+                            <option></option>
+                            <option></option>
+                            <option></option>
+                        </select>
+                    </li>
+                    <li>
+                        <label for="geographical_range">Geographical Range</label>
+                        <select>
+                            <option>All</option>
+                            <option>Upto 1 km</option>
+                            <option>Upto 5 km</option>
+                            <option>Upto 10 km</option>
+                            <option>Upto 50 km</option>
+                            <option>Upto 100 km</option>
+                            <option>Over 100 km</option>
+                        </select>
+                    </li>
+                </ul>
+            </aside>
+        </div>
+        
         <div class="container">
             <div class="jumbotron">
                 <h1>Welcome to our Cyber Store!</h1>
-                <p> We have the best cameras, watches and shirts for you. No need to hunt around, we have all in one place.</p>
             </div>
             <div class="row text-center">
                 <div class="col-md-3 col-sm-6">
                     <div class="thumbnail">
-                        <img src="img/5.jpg" alt="Cannon EOS">
+                        <img src="img/product_1.jfif" alt="Potatoes">
                         <div class="caption">
-                            <h4 style="font-weight: bold">Cannon EOS</h4>
-                            <p>Price Rs. 36000.00</p>
+                            <h4 style="font-weight: bold">Potatoes</h4>
+                            <p>Price per kg Rs. 40.00</p>
                             <button class="btn btn-primary btn-block">Buy</button>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-3 col-sm-6">
                     <div class="thumbnail">
-                        <img src="img/2.jpg" alt="Sony DSLR">
+                        <img src="img/product_2.jfif" alt="Tomatoes">
                         <div class="caption">
-                            <h4 style="font-weight: bold">Sony DSLR</h4>
-                            <p>Price Rs. 40000.00</p>
+                            <h4 style="font-weight: bold">Tomatoes</h4>
+                            <p>Price per kg Rs. 45.00</p>
                             <button class="btn btn-primary btn-block">Buy</button>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-3 col-sm-6">
                     <div class="thumbnail">
-                        <img src="img/3.jpg" alt="Sony DSLR">
+                        <img src="img/product_3.jfif" alt="Rice">
                         <div class="caption">
-                            <h4 style="font-weight: bold">Sony DSLR</h4>
-                            <p>Price Rs. 50000.00</p>
+                            <h4 style="font-weight: bold">Rice</h4>
+                            <p>Price per kg Rs. 43.00</p>
                             <button class="btn btn-primary btn-block">Buy</button>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-3 col-sm-6">
                     <div class="thumbnail">
-                        <img src="img/4.jpg" alt="Olympus DSLR">
+                        <img src="img/product_4.jfif" alt="Flour">
                         <div class="caption">
-                            <h4 style="font-weight: bold">Olympus DSLR</h4>
-                            <p>Price Rs. 60000.00</p>
-                            <button class="btn btn-primary btn-block">Buy</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row text-center">
-                <div class="col-md-3 col-sm-6">
-                    <div class="thumbnail">
-                        <img src="img/9.jpg" alt="Titan Model #301">
-                        <div class="caption">
-                            <h4 style="font-weight: bold">Titan Model #301</h4>
-                            <p>Price Rs. 13000.00</p>
-                            <button class="btn btn-primary btn-block">Buy</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                    <div class="thumbnail">
-                        <img src="img/10.jpg" alt="Titan Model #201">
-                        <div class="caption">
-                            <h4 style="font-weight: bold">Titan Model #201</h4>
-                            <p>Price Rs. 3000.00</p>
-                            <button class="btn btn-primary btn-block">Buy</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                    <div class="thumbnail">
-                        <img src="img/11.jpg" alt="HMT Milan">
-                        <div class="caption">
-                            <h4 style="font-weight: bold">HMT Milan</h4>
-                            <p>Price Rs. 8000.00</p>
-                            <button class="btn btn-primary btn-block">Buy</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                    <div class="thumbnail">
-                        <img src="img/12.jpg" alt="Faber Luba #111">
-                        <div class="caption">
-                            <h4 style="font-weight: bold">Faber Luba #111</h4>
-                            <p>Price Rs. 18000.00</p>
+                            <h4 style="font-weight: bold">Flour</h4>
+                            <p>Price per kg Rs. 35.00</p>
                             <button class="btn btn-primary btn-block">Buy</button>
                         </div>
                     </div>
@@ -122,46 +135,46 @@
             <div class="row text-center">
                 <div class="col-md-3 col-sm-6">
                     <div class="thumbnail">
-                    <img src="img/8.jpg" alt="H&W">
-                    <div class="caption">
-                        <h4 style="font-weight: bold">H&W</h4>
-                        <p>Price Rs. 800.00</p>
-                        <button class="btn btn-primary btn-block">Buy</button>
-                    </div>
-                    </div>
-                </div>
-                    
-                <div class="col-md-3 col-sm-6">
-                    <div class="thumbnail">
-                        <img src="img/6.jpg" alt="Luis Phil">
+                        <img src="img/product_5.jfif" alt="Apples">
                         <div class="caption">
-                            <h4 style="font-weight: bold">Luis Phil</h4>
-                            <p>Price Rs. 1000.00</p>
+                            <h4 style="font-weight: bold">Apples</h4>
+                            <p>Price per kg Rs. 60.00</p>
                             <button class="btn btn-primary btn-block">Buy</button>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-3 col-sm-6">
                     <div class="thumbnail">
-                        <img src="img/13.jpg" alt="John Zok">
+                        <img src="img/product_6.jfif" alt="Mangoes">
                         <div class="caption">
-                            <h4 style="font-weight: bold">John Zok</h4>
-                            <p>Price Rs. 1500.00</p>
+                            <h4 style="font-weight: bold">Mangoes</h4>
+                            <p>Price per kg Rs. 50.00</p>
                             <button class="btn btn-primary btn-block">Buy</button>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-3 col-sm-6">
                     <div class="thumbnail">
-                        <img src="img/14.jpg" alt="Jhalsani">
+                        <img src="img/product_7.jfif" alt="Banana">
                         <div class="caption">
-                            <h4 style="font-weight: bold">Jhalsani</h4>
-                            <p>Price Rs. 1300.00</p>
+                            <h4 style="font-weight: bold">Banana</h4>
+                            <p>Price per kg Rs. 30.00</p>
+                            <button class="btn btn-primary btn-block">Buy</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="thumbnail">
+                        <img src="img/product_8.jfif" alt="Cabbage">
+                        <div class="caption">
+                            <h4 style="font-weight: bold">Cabbage</h4>
+                            <p>Price per kg Rs. 40.00</p>
                             <button class="btn btn-primary btn-block">Buy</button>
                         </div>
                     </div>
                 </div>
             </div>
+            
         </div>
         
         <footer>
@@ -172,7 +185,7 @@
             </div>
         </footer>
         
-        
+        <script type="text/javascript" src="script.js"></script>
     </body>
 </html>
 
